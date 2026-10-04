@@ -1,0 +1,16 @@
+# Normalize text on commit and checkout, including on Windows.
+* text=auto eol=lf
+
+# Windows command scripts require CRLF; shell scripts require LF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.sh text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
